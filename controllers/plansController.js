@@ -13,7 +13,7 @@ const planArray = require("../models/planModel");
 // ROUTES
 
 //localhost:1981/plans/
-planArray.get("/", (req, res) => {
+plans.get("/", (req, res) => {
     res.json(planArray);
 });
 

@@ -1,11 +1,11 @@
 // DEPENDENCIES
 
-const express = require(express);
+const express = require("express");
 const locationsController = require("./controllers/locationsController");
 const machinesController = require("./controllers/machinesController");
 const personsController = require("./controllers/personsController");
 const plansController = require("./controllers/plansController");
-const specialEventsController = require("./controllers/specialEventsController");
+const socialEventsController = require("./controllers/socialEventsController");
 
 // CONFIGURATION
 
@@ -14,10 +14,10 @@ const app = express();
 // MIDDLEWARE
 
 app.use(`/locations`, locationsController);
-app.use(`/machinesController`, machinesController);
-app.use(`/personsController`, personsController);
-app.use(`/plansController`, plansController);
-app.use(`/specialEventsController`, specialEventsController);
+app.use(`/machines`, machinesController);
+app.use(`/persons`, personsController);
+app.use(`/plans`, plansController);
+app.use(`/socialEvents`, socialEventsController);
 
 // ROUTES
 
